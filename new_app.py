@@ -11,16 +11,16 @@ st.set_page_config(
     layout = 'centered'
 )
 
-st.title = 'Car2'
+st.title('Car2')
 st.markdown('Enter the car details to get an estimated price')
 st.divider()
 
 #LOAD THE MODEL
 @st.cache_resource
 def load_models():
-    model = joblib.load('light_best_estimator.joblib')
-    encoder = joblib.load('cat_encoder.joblib')
-    scaler = joblib.load('scaler.joblib')
+    model = joblib.load('light_best_estimator (1).joblib')
+    encoder = joblib.load('cat_encoder (1).joblib')
+    scaler = joblib.load('scaler (1).joblib')
     return model, encoder, scaler
 #TRY TO LOAD THE MODEL, SHOW ERROR IF THE FILE IS NOT FOUND
 try:
