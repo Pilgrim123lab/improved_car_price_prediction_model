@@ -10,7 +10,6 @@ st.set_page_config(
     page_title ='Car2',
     layout = 'centered'
 )
-st.title('Car Price Prediction App')
 st.markdown('Enter the car details to get an estimated price')
 st.divider()
 
